@@ -1,4 +1,5 @@
 import CarCard from "./components/CarCard";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/NavBar";
 import ReservationForm from "./components/ReservationForm";
@@ -192,7 +193,6 @@ const cars: Car[] = [
 function App() {
   return (
     <div className="min-h-screen w-ful bg-white p-6 box-border">
-      <TopBar/>
       <Navbar/>
 
       {/* main body with content */}
@@ -242,7 +242,7 @@ function App() {
       </section>
 
       
-
+            <Footer/>
     </div>
   );
 }
