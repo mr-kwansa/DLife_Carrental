@@ -1,67 +1,17 @@
 import CarCard from "./components/CarCard";
+import BusinessReadySection from "./components/BusinessReadySection";
+import FlexiblePlansSection from "./components/FlexiblePlansSection";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/NavBar";
+import PremiumCareSection from "./components/PremiumCareSection";
 import ReservationForm from "./components/ReservationForm";
+import Reviews from "./components/Reviews";
 import ThreeSteps from "./components/ThreeSteps";
-import TopBar from "./components/Topbar";
+import WhyDlifeSection from "./components/WhyDlifeSection";
 import type { Car } from "./components/types";
 
 const cars: Car[] = [
-  {
-    id: "1",
-    name: "Model S",
-    brand: "Tesla",
-    imageUrl: "/images/banner3.png",
-    pricePerDay: 120,
-    seats: 5,
-    transmission: "Automatic",
-  },
-  {
-    id: "2",
-    name: "Model 3",
-    brand: "Tesla",
-    imageUrl: "/images/banner3.png",
-    pricePerDay: 100,
-    seats: 5,
-    transmission: "Automatic",
-  },
-  {
-    id: "3",
-    name: "Model X",
-    brand: "Tesla",
-    imageUrl: "/images/banner3.png",
-    pricePerDay: 150,
-    seats: 7,
-    transmission: "Automatic",
-  },
-  {
-    id: "4",
-    name: "Model Y",
-    brand: "Tesla",
-    imageUrl: "/images/banner3.png",
-    pricePerDay: 110,
-    seats: 5,
-    transmission: "Automatic",
-  },
-  {
-    id: "5",
-    name: "Corolla Altis",
-    brand: "Toyota",
-    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle7.jpg",
-    pricePerDay: 85,
-    seats: 5,
-    transmission: "Automatic"
-  },
-  {
-    id: "6",
-    name: "Civic",
-    brand: "Honda",
-    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle5.jpg",
-    pricePerDay: 80,
-    seats: 5,
-    transmission: "Automatic"
-  },
   {
     id: "7",
     name: "Mustang GT",
@@ -86,33 +36,6 @@ const cars: Car[] = [
     brand: "Mercedes-Benz",
     imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle4.jpg",
     pricePerDay: 140,
-    seats: 5,
-    transmission: "Automatic"
-  },
-  {
-    id: "10",
-    name: "Range Rover Sport",
-    brand: "Land Rover",
-    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle6.jpg",
-    pricePerDay: 200,
-    seats: 5,
-    transmission: "Automatic"
-  },
-  {
-    id: "11",
-    name: "Camaro",
-    brand: "Chevrolet",
-    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle9.jpg",
-    pricePerDay: 130,
-    seats: 4,
-    transmission: "Manual"
-  },
-  {
-    id: "12",
-    name: "Swift",
-    brand: "Suzuki",
-    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle12.jpg",
-    pricePerDay: 45,
     seats: 5,
     transmission: "Automatic"
   },
@@ -151,54 +74,21 @@ const cars: Car[] = [
     pricePerDay: 90,
     seats: 7,
     transmission: "Automatic"
-  },
-  {
-    id: "17",
-    name: "CX-5",
-    brand: "Mazda",
-    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle16.jpg",
-    pricePerDay: 95,
-    seats: 5,
-    transmission: "Automatic"
-  },
-  {
-    id: "18",
-    name: "Seltos",
-    brand: "Kia",
-    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle15.jpg",
-    pricePerDay: 85,
-    seats: 5,
-    transmission: "Automatic"
-  },
-  {
-    id: "19",
-    name: "Micra",
-    brand: "Nissan",
-    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle17.jpg",
-    pricePerDay: 50,
-    seats: 5,
-    transmission: "Automatic"
-  },
-  {
-    id: "20",
-    name: "Polo",
-    brand: "Volkswagen",
-    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle18.jpg",
-    pricePerDay: 55,
-    seats: 5,
-    transmission: "Manual"
-  },
+  }
 ];
 
 function App() {
   return (
-    <div className="min-h-screen w-ful bg-white p-6 box-border">
+    <div className="min-h-screen w-full bg-white">
       <Navbar/>
 
       {/* main body with content */}
       <Hero/>
       <ReservationForm/>
       <ThreeSteps/>
+      <WhyDlifeSection />
+      <FlexiblePlansSection />
+      <BusinessReadySection />
 
       {/* Premium Fleet Section */}
       <section className="bg-gray-900 py-16 px-6">
@@ -240,8 +130,8 @@ function App() {
           </div>
 
       </section>
-
-      
+      <PremiumCareSection />
+      <Reviews />      
             <Footer/>
     </div>
   );
