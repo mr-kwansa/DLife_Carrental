@@ -1,5 +1,8 @@
 import CarCard from "./components/CarCard";
+import Hero from "./components/Hero";
 import Navbar from "./components/NavBar";
+import ReservationForm from "./components/ReservationForm";
+import ThreeSteps from "./components/ThreeSteps";
 import TopBar from "./components/Topbar";
 import type { Car } from "./components/types";
 
@@ -192,12 +195,54 @@ function App() {
       <TopBar/>
       <Navbar/>
 
-      {/* Car grid: 4 columns on md and up */}
-      <div className="mb-20 grid w-full max-w-7xl mx-auto grid-cols-1 md:grid-cols-4 gap-10">
-        {cars.map((car) => (
-          <CarCard key={car.id} car={car} />
-        ))}
-      </div>
+      {/* main body with content */}
+      <Hero/>
+      <ReservationForm/>
+      <ThreeSteps/>
+
+      {/* Premium Fleet Section */}
+      <section className="bg-gray-900 py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Heading with decorative lines */}
+          <div className="flex items-center justify-center gap-4 mb-8">
+            {/* Left decorative elements */}
+            <div className="flex items-center gap-1">
+              <div className="w-8 h-0.5 bg-orange-600"></div>
+              <div className="w-0.5 h-12 bg-orange-600"></div>
+              <div className="w-0.5 h-12 bg-orange-600"></div>
+            </div>
+            
+            {/* Main heading */}
+            <h2 className="text-5xl lg:text-6xl font-bold text-white whitespace-nowrap">
+              Explore Our Premium Fleet
+            </h2>
+            
+            {/* Right decorative elements */}
+            <div className="flex items-center gap-1">
+              <div className="w-0.5 h-12 bg-orange-600"></div>
+              <div className="w-0.5 h-12 bg-orange-600"></div>
+              <div className="w-8 h-0.5 bg-orange-600"></div>
+            </div>
+          </div>
+          
+          {/* Descriptive paragraph */}
+          <p className="text-gray-300 text-lg leading-relaxed">
+            Choose from our wide selection of vehicles, from economical compacts to luxurious SUVs, all maintained to the highest standards.
+          </p>
+        </div>
+        {/* Car grid: 2 columns so each card is wider */}
+        <div className="mb-20 mt-12 w-full px-12">
+        <div className="mx-auto grid max-w-screen-2xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {cars.map((car) => (
+           <CarCard key={car.id} car={car} />
+            ))}
+        </div>
+          </div>
+
+      </section>
+
+      
+
     </div>
   );
 }

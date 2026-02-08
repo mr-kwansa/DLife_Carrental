@@ -5,7 +5,7 @@ const Navbar = () => {
 
           <img
           src="images/dlife2-removebg-preview.png"
-          className="h-36 w-36"
+          className="h-52 "
           />
         </div>
 
