@@ -21,8 +21,6 @@ const BusinessReadySection = () => {
       imageAlt="Driver stepping into a car"
       reverse
       tone="light"
-      ctaLabel="Explore Business Plans"
-      ctaHref="#"
     />
   );
 };
