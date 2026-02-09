@@ -1,18 +1,23 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-gray-800/95 backdrop-blur">
-      <div className="flex w-full h-30 flex-wrap items-center justify-between px-8 ">
-        <a href="#" className="flex items-center">
+      <div className="flex w-full flex-wrap items-center justify-between px-10 py-6">
+        <Link
+          to="/"
+          className="flex items-center"
+          onClick={() => setIsOpen(false)}
+        >
           <img
             src="images/dlife2-removebg-preview.png"
             className="h-32 w-auto"
             alt="DLIFE"
           />
-        </a>
+        </Link>
 
         <div className="flex items-center gap-4 md:order-2">
           <button className="rounded-full bg-red-600 px-7 py-3 text-base font-semibold text-white shadow-sm hover:bg-red-700">
@@ -53,34 +58,38 @@ const Navbar = () => {
         >
           <ul className="mt-4 flex flex-col gap-2 rounded-2xl border border-white/10 bg-gray-800/95 p-4 text-lg font-semibold text-gray-200 md:mt-0 md:flex-row md:gap-10 md:border-0 md:bg-transparent md:p-0">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="block rounded-xl bg-white/10 px-4 py-2 text-white md:bg-transparent md:px-0 md:py-0"
                 aria-current="page"
+                onClick={() => setIsOpen(false)}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/vehicles"
                 className="block rounded-xl px-4 py-2 hover:bg-white/10 md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-white"
+                onClick={() => setIsOpen(false)}
               >
                 Vehicles
-              </a>
+              </Link>
             </li>
             <li>
               <a
-                href="#"
+                href="#services"
                 className="block rounded-xl px-4 py-2 hover:bg-white/10 md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-white"
+                onClick={() => setIsOpen(false)}
               >
                 Services
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#contact"
                 className="block rounded-xl px-4 py-2 hover:bg-white/10 md:px-0 md:py-0 md:hover:bg-transparent md:hover:text-white"
+                onClick={() => setIsOpen(false)}
               >
                 Contact
               </a>
