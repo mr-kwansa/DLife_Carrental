@@ -26,7 +26,7 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [sportsCars.length]);
   return (
-    <section className="relative py-8 bg-white w-full">
+    <section className="relative py-32 bg-white w-full ">
   <div className="w-full px-6 lg:px-12 h-full flex">
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-12 w-full items-center">
       
