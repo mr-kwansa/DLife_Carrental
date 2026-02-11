@@ -1,0 +1,44 @@
+declare global {
+    interface Window {
+      PaystackPop: any;
+    }
+  }
+  
+  type PayProps = {
+    email: string;
+    amount: number; // in GHS (not pesewas yet)
+  };
+  
+  export default function PayNow({ email, amount }: PayProps) {
+  
+    const startPayment = () => {
+      const handler = window.PaystackPop.setup({
+        key: import.meta.env.VITE_PAYSTACK_KEY,
+        email: email,
+        amount: amount * 100, // convert to pesewas
+        currency: "GHS",
+        ref: "DLIFE_" + Date.now(),
+  
+        callback: (response: any) => {
+          console.log("Payment successful:", response.reference);
+          alert("Payment successful 🎉");
+        },
+  
+        onClose: () => {
+          alert("Payment cancelled");
+        }
+      });
+  
+      handler.openIframe();
+    };
+  
+    return (
+      <button
+        onClick={startPayment}
+        className="bg-black text-white px-6 py-3 rounded-lg"
+      >
+        Pay Now
+      </button>
+    );
+  }
+  
