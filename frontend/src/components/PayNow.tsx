@@ -3,7 +3,8 @@ declare global {
       PaystackPop: any;
     }
   }
-  
+
+
   type PayProps = {
     email: string;
     amount: number; // in GHS (not pesewas yet)
@@ -15,10 +16,12 @@ declare global {
       const handler = window.PaystackPop.setup({
         key: import.meta.env.VITE_PAYSTACK_KEY,
         email: email,
-        amount: amount * 100, // convert to pesewas
+        amount: amount, // convert to pesewas
         currency: "GHS",
         ref: "DLIFE_" + Date.now(),
-  
+
+
+        //check is payment went through 
         callback: (response: any) => {
           console.log("Payment successful:", response.reference);
           alert("Payment successful 🎉");
