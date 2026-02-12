@@ -83,7 +83,8 @@ const VehiclesPage = () => {
                 <option>Any Capacity</option>
                 <option>2-4</option>
                 <option>5</option>
-                <option>6+</option>
+                <option>6</option>
+                <option>7+</option>
               </select>
             </div>
             <div>
