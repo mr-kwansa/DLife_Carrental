@@ -8,5 +8,8 @@ export interface Car {
     seats: number;
     bags?: number;
     transmission: 'Automatic' | 'Manual';
+    fuelType: "Gas" | "Electric" | "Hybrid";
+    badgeTag: string;
+    rating: number;
   }
   

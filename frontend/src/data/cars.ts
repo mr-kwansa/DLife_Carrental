@@ -1,5 +1,15 @@
 import type { Car } from "../components/types";
 
+
+
+// note badge types are :
+// badgeTag: "Sport"
+// badgeTag: "Premium"
+// badgeTag: "Luxury"
+// badgeTag: "Family"
+// badgeTag: "Economy"
+
+
 export const cars: Car[] = [
   {
     id: "1",
@@ -9,24 +19,33 @@ export const cars: Car[] = [
     pricePerDay: 120,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Electric",
+    badgeTag: "Sport",
+    rating: 4.1,
   },
   {
     id: "2",
     name: "Model 3",
     brand: "Tesla",
-    imageUrl: "/images/banner3.png",
+    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle8.jpg",
     pricePerDay: 100,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Electric",
+    badgeTag: "Premium",
+    rating: 4.7,
   },
   {
     id: "3",
     name: "Model X",
     brand: "Tesla",
-    imageUrl: "/images/banner3.png",
+    imageUrl: "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle11.jpg",
     pricePerDay: 150,
     seats: 7,
     transmission: "Automatic",
+    fuelType: "Electric",
+    badgeTag: "Luxury",
+    rating: 4.9,
   },
   {
     id: "4",
@@ -36,16 +55,21 @@ export const cars: Car[] = [
     pricePerDay: 110,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Electric",
+    badgeTag: "Premium",
+    rating: 4.7,
   },
   {
     id: "5",
     name: "Corolla Altis",
     brand: "Toyota",
-    imageUrl:
-      "https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle7.jpg",
+    imageUrl:"https://templates.envytheme.com/rentq/assets/images/vehicles/vehicle7.jpg",
     pricePerDay: 85,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Gas",
+    badgeTag: "Economy",
+    rating: 4.6,
   },
   {
     id: "6",
@@ -56,6 +80,9 @@ export const cars: Car[] = [
     pricePerDay: 80,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Gas",
+    badgeTag: "Economy",
+    rating: 4.5,
   },
   {
     id: "7",
@@ -66,6 +93,9 @@ export const cars: Car[] = [
     pricePerDay: 160,
     seats: 4,
     transmission: "Manual",
+    fuelType: "Gas",
+    badgeTag: "Sport",
+    rating: 4.8,
   },
   {
     id: "8",
@@ -76,6 +106,9 @@ export const cars: Car[] = [
     pricePerDay: 170,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Gas",
+    badgeTag: "Premium",
+    rating: 4.9,
   },
   {
     id: "9",
@@ -86,6 +119,9 @@ export const cars: Car[] = [
     pricePerDay: 140,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Gas",
+    badgeTag: "Luxury",
+    rating: 4.8,
   },
   {
     id: "10",
@@ -96,6 +132,9 @@ export const cars: Car[] = [
     pricePerDay: 200,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Gas",
+    badgeTag: "Luxury",
+    rating: 4.9,
   },
   {
     id: "11",
@@ -106,6 +145,9 @@ export const cars: Car[] = [
     pricePerDay: 130,
     seats: 4,
     transmission: "Manual",
+    fuelType: "Gas",
+    badgeTag: "Sport",
+    rating: 4.7,
   },
   {
     id: "12",
@@ -116,6 +158,9 @@ export const cars: Car[] = [
     pricePerDay: 45,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Gas",
+    badgeTag: "Economy",
+    rating: 4.4,
   },
   {
     id: "13",
@@ -126,6 +171,9 @@ export const cars: Car[] = [
     pricePerDay: 155,
     seats: 7,
     transmission: "Automatic",
+    fuelType: "Hybrid",
+    badgeTag: "Family",
+    rating: 4.8,
   },
   {
     id: "14",
@@ -136,6 +184,9 @@ export const cars: Car[] = [
     pricePerDay: 120,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Gas",
+    badgeTag: "Premium",
+    rating: 4.7,
   },
   {
     id: "15",
@@ -146,6 +197,9 @@ export const cars: Car[] = [
     pricePerDay: 70,
     seats: 5,
     transmission: "Automatic",
+    fuelType: "Gas",
+    badgeTag: "Economy",
+    rating: 4.5,
   },
   {
     id: "16",
@@ -156,5 +210,8 @@ export const cars: Car[] = [
     pricePerDay: 90,
     seats: 7,
     transmission: "Automatic",
+    fuelType: "Gas",
+    badgeTag: "Family",
+    rating: 4.6,
   },
 ];

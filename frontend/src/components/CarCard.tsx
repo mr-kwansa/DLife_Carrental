@@ -1,9 +1,6 @@
 import React from "react";
 import type { Car } from "./types";
-import Icon from "@mdi/react";
-import { mdiCarSeat } from "@mdi/js";
-import { FaRegSnowflake } from "react-icons/fa";
-import { FaBagShopping } from "react-icons/fa6";
+import { FaBolt, FaGasPump, FaStar, FaUser } from "react-icons/fa";
 import { GiGearStickPattern, GiGearStick } from "react-icons/gi";
 
 interface CarCardProps {
@@ -11,66 +8,74 @@ interface CarCardProps {
 }
 
 const CarCard: React.FC<CarCardProps> = ({ car }) => {
+  const transmissionLabel =
+    car.transmission === "Automatic" ? "Automatic" : "Manual";
+
   return (
-    <div className="bg-gray-800 text-gray-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition border border-gray-700/50 w-full min-w-0">
-      {/* Car Image - 2x height */}
-      <div className="w-full h-96 overflow-hidden bg-gray-700">
+    <article className="w-full min-w-0 overflow-hidden rounded-[28px] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg">
+      <div className="relative h-72 overflow-hidden rounded-b-none rounded-[28px] bg-slate-100 p-4">
+        <span className="absolute left-5 top-5 rounded-lg bg-blue-600 px-4 py-1.5 text-sm font-bold uppercase tracking-[0.14em] text-white">
+          {car.badgeTag}
+        </span>
         <img
           src={car.imageUrl}
           alt={car.name}
-          className="w-full h-full object-cover object-center"
+          className="h-full w-full rounded-2xl object-cover object-center"
         />
       </div>
 
-      {/* Car Info - 2x padding and typography */}
-      <div className="p-10">
-        {/* Name, type, and price row */}
-        <div className="flex justify-between items-start gap-6 mb-8">
+      <div className="space-y-6 p-6">
+        <div className="flex items-start justify-between gap-4">
           <div>
-            <h2 className="font-bold text-3xl text-white">{car.name}</h2>
-            <p className="text-gray-400 text-base">{car.brand}</p>
+            <h3 className="text-3xl font-extrabold tracking-tight text-slate-900">
+              {car.brand} {car.name}
+            </h3>
+            <p className="mt-1 text-xl text-slate-500">
+              {transmissionLabel} • {car.fuelType}
+            </p>
           </div>
-          <div className="text-right shrink-0">
-            <span className="text-3xl font-bold text-white">${car.pricePerDay}</span>
-            <p className="text-gray-400 text-sm">Per day</p>
+          <div className="shrink-0 rounded-xl bg-slate-200 px-4 py-2">
+            <span className="inline-flex items-center gap-2 text-2xl font-bold text-slate-800">
+              <FaStar className="text-amber-400" />
+              {car.rating.toFixed(1)}
+            </span>
           </div>
         </div>
 
-        {/* Features: Seats, Bags, AC, Transmission */}
-        <div className="flex justify-between text-gray-400 text-base mb-10">
-          <div className="flex flex-col items-center gap-2">
-            <Icon path={mdiCarSeat} size={1.3} className="text-gray-300" />
-            <span>{car.seats} Seats</span>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <FaBagShopping className="text-gray-300 text-2xl" />
-            <span>{car.bags ?? 2} Bags</span>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <FaRegSnowflake className="text-gray-300 text-2xl" />
-            <span>AC</span>
-          </div>
-          <div className="flex flex-col items-center gap-2">
+        <div className="h-px w-full bg-slate-200" />
+
+        <div className="flex flex-wrap items-center gap-8 text-2xl text-slate-500">
+          <span className="inline-flex items-center gap-3">
+            <FaUser />
+            {car.seats} Seats
+          </span>
+          <span className="inline-flex items-center gap-3">
             {car.transmission === "Automatic" ? (
-              <GiGearStick className="text-gray-300 text-2xl" />
+              <GiGearStick />
             ) : (
-              <GiGearStickPattern className="text-gray-300 text-2xl" />
+              <GiGearStickPattern />
             )}
-            <span>Auto</span>
-          </div>
+            {transmissionLabel}
+          </span>
+          <span className="inline-flex items-center gap-3">
+            {car.fuelType === "Electric" ? <FaBolt /> : <FaGasPump />}
+            {car.fuelType}
+          </span>
         </div>
 
-        {/* Buttons */}
-        <div className="flex gap-6">
-          <button className="flex-1 bg-orange-600 text-white py-5 rounded-xl font-semibold hover:bg-orange-500 transition text-base">
-            Rent Now
-          </button>
-          <button className="flex-1 bg-gray-700 text-gray-200 py-5 rounded-xl font-semibold hover:bg-gray-600 transition text-base border border-gray-600">
-            See Details
+        <div className="h-px w-full bg-slate-200" />
+
+        <div className="flex items-center justify-between gap-4">
+          <p className="text-4xl font-semibold tracking-tight text-slate-900">
+            ${car.pricePerDay}
+            <span className="ml-2 text-2xl font-medium text-slate-500">/ day</span>
+          </p>
+          <button className="rounded-2xl bg-amber-400 px-10 py-4 text-3xl font-bold text-slate-900 shadow-[0_10px_30px_-14px_rgba(245,158,11,0.9)] transition hover:bg-amber-300">
+            Book Now
           </button>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

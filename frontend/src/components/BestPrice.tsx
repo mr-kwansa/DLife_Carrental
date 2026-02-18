@@ -1,55 +1,46 @@
-import { FaCar, FaCreditCard, FaMapMarkerAlt } from "react-icons/fa";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCalendarCheck, FaHeadset, FaShieldAlt } from "react-icons/fa";
 
 const BestPrice = () => {
+  const items = [
+    {
+      icon: <FaShieldAlt className="text-3xl text-blue-600" />,
+      title: "Best Price Guarantee",
+      description:
+        "We match any price you find elsewhere for the same vehicle and rental terms.",
+    },
+    {
+      icon: <FaHeadset className="text-3xl text-blue-600" />,
+      title: "24/7 Roadside Support",
+      description:
+        "Our team is always on standby to assist you with any issues during your trip.",
+    },
+    {
+      icon: <FaCalendarCheck className="text-3xl text-blue-600" />,
+      title: "Flexible Cancellations",
+      description:
+        "Free cancellation up to 48 hours before your booking start date.",
+    },
+  ];
+
   return (
-    <section className="bg-white py-16 px-6">
-      <div className="max-w-7xl mx-auto">
-        {/* Three Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-          {/* Step 1: Choose & Book */}
-          <div className="text-center">
-            <div className="relative inline-block mb-4">
-              <FaCar className="text-6xl text-gray-300 mx-auto" />
-              <FaCheckCircle className="absolute -top-2 -right-2 text-2xl text-blue-600 bg-white rounded-full" />
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">
-              <span className="text-blue-600">01.</span> Choose & Book
-            </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Select your dates, location, and browse our wide range of vehicles.
-            </p>
-          </div>
-
-          {/* Step 2: Confirm & Pay */}
-          <div className="text-center">
-            <div className="relative inline-block mb-4">
-              <FaCreditCard className="text-6xl text-gray-300 mx-auto" />
-              <FaCheckCircle className="absolute -top-2 right-0 text-2xl text-blue-600 bg-white rounded-full" />
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">
-              <span className="text-blue-600">02.</span> Confirm & Pay
-            </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Securely complete your booking online with our transparent, all-inclusive pricing.
-            </p>
-          </div>
-
-          {/* Step 3: Pick Up & Go */}
-          <div className="text-center">
-            <div className="relative inline-block mb-4">
-              <FaMapMarkerAlt className="text-6xl text-gray-300 mx-auto" />
-              <div className="absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1">
-                <FaCar className="text-base text-blue-600" />
+    <section className="bg-slate-100 px-8 py-24 lg:px-14 lg:py-28">
+      <div className="mx-auto max-w-[1700px]">
+        <div className="grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-12">
+          {items.map((item) => (
+            <article key={item.title} className="flex items-start gap-7">
+              <div className="grid h-24 w-24 shrink-0 place-items-center rounded-3xl bg-blue-100">
+                {item.icon}
               </div>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">
-              <span className="text-blue-600">03.</span> Pick Up & Go
-            </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Show your license and confirmation at our counter, and you're ready to hit the road!
-            </p>
-          </div>
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-slate-900">
+                  {item.title}
+                </h3>
+                <p className="max-w-xl text-xl leading-relaxed text-slate-600">
+                  {item.description}
+                </p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
