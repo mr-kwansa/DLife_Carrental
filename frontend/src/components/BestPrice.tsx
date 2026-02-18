@@ -1,19 +1,10 @@
 import { FaCar, FaCreditCard, FaMapMarkerAlt } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 
-const ThreeSteps = () => {
+const BestPrice = () => {
   return (
     <section className="bg-white py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        {/* Main Title with decorative lines */}
-        <div className="flex items-center justify-center gap-4 mb-12">
-          <div className="w-12 h-0.5 text-blue-600"/>
-          <h2 className="text-6xl lg:text-6xl font-bold text-gray-900 whitespace-nowrap">
-            Rent a Car in 3 Easy Steps
-          </h2>
-          <div className="w-12 h-0.5 text-blue-600"/>
-        </div>
-
         {/* Three Steps Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {/* Step 1: Choose & Book */}
@@ -65,4 +56,4 @@ const ThreeSteps = () => {
   );
 };
 
-export default ThreeSteps;
+export default BestPrice;

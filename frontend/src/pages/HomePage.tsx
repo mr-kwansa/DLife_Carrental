@@ -9,6 +9,7 @@ import SiteLayout from "../components/SiteLayout";
 import ThreeSteps from "../components/ThreeSteps";
 import WhyDlifeSection from "../components/WhyDlifeSection";
 import { cars } from "../data/cars";
+import BestPrice from "../components/bestprice";
 
 const HomePage = () => {
   return (
@@ -16,9 +17,10 @@ const HomePage = () => {
       {/* main body with content */}
       <Hero />
       <ReservationForm />
-      <section id="services">
+      <BestPrice/>
+      {/* <section id="services">
         <ThreeSteps />
-      </section>
+      </section> */}
       <WhyDlifeSection />
       <FlexiblePlansSection />
       <BusinessReadySection />
