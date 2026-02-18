@@ -26,25 +26,24 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [sportsCars.length]);
   return (
-    <section className="relative py-32 bg-white w-full ">
-  <div className="w-full px-6 lg:px-12 h-full flex">
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-12 w-full items-center">
+    <section className="relative w-full bg-white py-32">
+  <div className="flex h-full w-full px-6 lg:px-12">
+    <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-[1fr_1.4fr] lg:gap-20">
       
       {/* LEFT */}
-      <div className="space-y-6">
-        <h1 className="text-8xl font-extrabold leading-tight">
-          <span className="text-red-600">Rent Smart.</span><br />
-          Drive Anywhere<br />
-          with DLIFE.
+      <div className="space-y-8">
+        <h1 className="text-6xl font-extrabold leading-[0.95] tracking-tight text-black md:text-7xl lg:text-8xl">
+          <span className="block">Rent Your</span>
+          <span className="block text-blue-700">Dream</span>
+          <span className="block">
+            <span className="text-blue-700">Car</span> in Minutes.
+          </span>
         </h1>
 
-        <p className="text-gray-600 max-w-md">
-          Affordable, reliable, and hassle-free car rentals in minutes.
+        <p className="max-w-xl  text-gray-600 md:text-2xl">
+          Experience the freedom of the open road with our premium fleet.
+          Reliable, transparent pricing, and 24/7 support for your journey.
         </p>
-
-        <button className="bg-red-600 text-white px-6 py-3 rounded-lg">
-          Start Booking
-        </button>
       </div>
 
       {/* RIGHT - larger image, pushed to far right */}
