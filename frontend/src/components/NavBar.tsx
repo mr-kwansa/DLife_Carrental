@@ -6,29 +6,28 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 z-50 h-20 w-full border-b border-slate-200 bg-white">
-      <div className="relative flex h-full w-full items-center justify-between px-2 sm:px-4">
+      <div className="relative flex h-full w-full items-center justify-between pr-2 pl-0 sm:pr-4 sm:pl-0">
         <Link
           to="/"
-          className="flex items-center"
+          className={`relative z-10 -ml-4 flex h-20 items-center transition-opacity ${
+            isOpen
+              ? "pointer-events-none opacity-0 md:pointer-events-auto md:opacity-100"
+              : "opacity-100"
+          }`}
           onClick={() => setIsOpen(false)}
         >
           <img src="images/Dlife_Logo.png" alt="DLIFE" className="h-42 w-auto" />
         </Link>
           {/* desktop view */}
-        <ul className="hidden items-center gap-10 text-2xl font-medium text-slate-600  md:absolute md:left-1/2 md:flex md:-translate-x-1/2">
+        <ul className="hidden items-center gap-10 text-2xl font-medium text-slate-600 md:absolute md:left-1/2 md:z-20 md:flex md:-translate-x-1/2">
           <li>
-            <Link to="/Rent" className="hover:text-blue-700">
+            <Link to="/rent" className="hover:text-blue-700">
               Rent
             </Link>
           </li>
           <li>
             <Link to="/services" className="hover:text-blue-700">
               Services
-            </Link>
-          </li>
-          <li>
-            <Link to="/vehicles" className="hover:text-blue-700">
-              Fleet
             </Link>
           </li>
           <li>
@@ -69,18 +68,13 @@ const Navbar = () => {
       >
         <ul className="flex flex-col gap-4 px-4 py-5 text-lg font-medium text-slate-600">
           <li>
-            <Link to="/" className="hover:text-blue-700" onClick={() => setIsOpen(false)}>
+            <Link to="/rent" className="hover:text-blue-700" onClick={() => setIsOpen(false)}>
               Rent
             </Link>
           </li>
           <li>
             <Link to="/services" className="hover:text-blue-700" onClick={() => setIsOpen(false)}>
               Services
-            </Link>
-          </li>
-          <li>
-            <Link to="/vehicles" className="hover:text-blue-700" onClick={() => setIsOpen(false)}>
-              Fleet
             </Link>
           </li>
           <li>
