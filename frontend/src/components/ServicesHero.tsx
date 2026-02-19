@@ -43,7 +43,7 @@ const services = [
 
 const ServicesHero = () => {
   return (
-    <section className="w-full bg-gradient-to-r from-slate-50 via-slate-100 to-slate-50 py-20 lg:py-24">
+    <section className="w-full bg-linear-to-r from-slate-50 via-slate-100 to-slate-50 py-20 lg:py-24">
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-12">
         <div className="mx-auto max-w-5xl text-center">
           <span className="inline-block rounded-full bg-blue-100 px-5 py-2 text-xs font-bold tracking-[0.16em] text-blue-700 uppercase">
