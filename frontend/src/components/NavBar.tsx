@@ -16,7 +16,7 @@ const Navbar = () => {
           }`}
           onClick={() => setIsOpen(false)}
         >
-          <img src="images/Dlife_Logo.png" alt="DLIFE" className="h-42 w-auto" />
+          <img src="public/images/Dlife_Logo.png" alt="DLIFE" className="h-42 w-auto" />
         </Link>
           {/* desktop view */}
         <ul className="hidden items-center gap-10 text-2xl font-medium text-slate-600 md:absolute md:left-1/2 md:z-20 md:flex md:-translate-x-1/2">
