@@ -3,7 +3,7 @@ import { FiChevronDown } from "react-icons/fi";
 
 const ReservationForm = () => {
   return (
-    <div className="relative z-20 -mt-10 mb-16 px-4 sm:px-6 lg:-mt-14 lg:px-12">
+    <div className="relative z-20 -mt-10 mb-16 px-4 py-40 sm:px-6 lg:-mt-14 lg:px-12">
       <div className="mx-auto w-full max-w-[1500px] rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_20px_45px_-24px_rgba(15,23,42,0.45)] lg:p-10">
         <form className="grid grid-cols-1 gap-4 lg:grid-cols-[1.2fr_1.2fr_1.2fr_1.2fr_1.4fr] lg:items-end lg:gap-6">
           <div>

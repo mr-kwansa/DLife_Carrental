@@ -26,20 +26,18 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [sportsCars.length]);
   return (
-    <section className="relative w-full bg-white py-32">
+    <section className="relative w-full bg-white">
   <div className="flex h-full w-full px-6 lg:px-12">
     <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-[1fr_1.4fr] lg:gap-20">
       
       {/* LEFT */}
       <div className="space-y-8">
-        <h1 className="text-6xl font-extrabold leading-[0.95] tracking-tight text-black md:text-7xl lg:text-8xl">
-          <span className="block">Rent Your</span>
-          <span className="block text-blue-700">Dream</span>
+        <h1 className="text-6xl leading-[0.95] tracking-tight text-black md:text-7xl lg:text-8xl ">
+          <span className="block">Rent Your <span className="text-blue-700">Dream</span></span>
           <span className="block">
             <span className="text-blue-700">Car</span> in Minutes.
           </span>
         </h1>
-
         <p className="max-w-xl  text-gray-600 md:text-2xl">
           Experience the freedom of the open road with our premium fleet.
           Reliable, transparent pricing, and 24/7 support for your journey.
