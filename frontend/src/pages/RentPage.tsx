@@ -50,7 +50,7 @@ const RentPage = () => {
         <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-[240px_1fr]">
           <aside className="rounded-xl border border-slate-200 bg-white p-5">
             <h2 className="text-sm font-bold tracking-wide text-slate-900 uppercase">
-              Vehicle Type
+              Vehicle Type/Types
             </h2>
             <div className="mt-4 space-y-3">
               {vehicleTypes.map((item) => (
