@@ -4,7 +4,7 @@ import ReservationForm from "../components/ReservationForm";
 import SiteLayout from "../components/SiteLayout";
 import WhyDlifeSection from "../components/WhyDlifeSection";
 import { cars } from "../data/cars";
-import BestPrice from "../components/bestprice";
+import BestPrice from "../components/BestPrice";
 
 const HomePage = () => {
   return (
@@ -31,6 +31,7 @@ const HomePage = () => {
         </div>
         <div className="mb-20 mt-12 w-full px-12">
           <div className="mx-auto grid max-w-screen-2xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* bellow is how the cars data is pulled into the front end */}
             {cars.slice(0, 9).map((car) => (
               <CarCard key={car.id} car={car} />
             ))}

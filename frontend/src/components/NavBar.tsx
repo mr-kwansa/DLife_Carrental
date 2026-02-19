@@ -22,9 +22,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="#services" className="hover:text-blue-700">
+            <Link to="/services" className="hover:text-blue-700">
               Services
-            </a>
+            </Link>
           </li>
           <li>
             <Link to="/vehicles" className="hover:text-blue-700">
@@ -67,24 +67,24 @@ const Navbar = () => {
         id="mobile-nav"
         className={`${isOpen ? "block" : "hidden"} border-t border-slate-200 bg-white md:hidden`}
       >
-       <ul className="hidden items-center gap-10 text-2xl font-medium text-slate-600  md:absolute md:left-1/2 md:flex md:-translate-x-1/2">
+        <ul className="flex flex-col gap-4 px-4 py-5 text-lg font-medium text-slate-600">
           <li>
-            <Link to="/" className="hover:text-blue-700">
+            <Link to="/" className="hover:text-blue-700" onClick={() => setIsOpen(false)}>
               Rent
             </Link>
           </li>
           <li>
-            <a href="#services" className="hover:text-blue-700">
+            <Link to="/services" className="hover:text-blue-700" onClick={() => setIsOpen(false)}>
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <Link to="/vehicles" className="hover:text-blue-700">
+            <Link to="/vehicles" className="hover:text-blue-700" onClick={() => setIsOpen(false)}>
               Fleet
             </Link>
           </li>
           <li>
-            <a href="#contact" className="hover:text-blue-700">
+            <a href="#contact" className="hover:text-blue-700" onClick={() => setIsOpen(false)}>
               About
             </a>
           </li>
