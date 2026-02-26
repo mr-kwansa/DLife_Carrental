@@ -5,14 +5,17 @@ import { GiGearStickPattern, GiGearStick } from "react-icons/gi";
 
 interface CarCardProps {
   car: Car;
+  className?: string;
 }
 
-const CarCard: React.FC<CarCardProps> = ({ car }) => {
+const CarCard: React.FC<CarCardProps> = ({ car, className = "" }) => {
   const transmissionLabel =
     car.transmission === "Automatic" ? "Automatic" : "Manual";
 
   return (
-    <article className="mx-auto w-full max-w-[460px] min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg">
+    <article
+      className={`mx-auto w-full max-w-[460px] min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg ${className}`}
+    >
       <div className="relative h-56 overflow-hidden rounded-b-none rounded-2xl bg-slate-100 p-3">
         <span className="absolute left-4 top-4 rounded-lg bg-blue-600 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-white">
           {car.badgeTag}

@@ -148,9 +148,9 @@ const RentPage = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-5">
+            <div className="grid grid-cols-1 gap-x-1 gap-y-2 md:grid-cols-2 xl:grid-cols-4">
               {filteredCars.map((car) => (
-                <CarCard key={car.id} car={car} />
+                <CarCard key={car.id} car={car} className="mx-0 max-w-none" />
               ))}
             </div>
 
