@@ -21,7 +21,7 @@ const Footer = () => {
                 alt="DLIFE Logo"
               />
             </a>
-            <p className="mt-8 max-w-sm text-2xl leading-relaxed text-slate-300">
+            <p className="mt-8 max-w-sm text-xl leading-relaxed text-slate-300">
               Redefining the car rental experience with technology, luxury, and
               world-class service. Your journey starts here.
             </p>
@@ -48,8 +48,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-4xl font-semibold text-white">Quick Links</h3>
-            <ul className="mt-8 space-y-5 text-2xl text-slate-300">
+            <h3 className="text-2xl font-semibold text-white">Quick Links</h3>
+            <ul className="mt-8 space-y-5 text-xl text-slate-300">
               <li><a href="#" className="hover:text-white">Our Fleet</a></li>
               <li><a href="#" className="hover:text-white">Special Offers</a></li>
               <li><a href="#services" className="hover:text-white">Services</a></li>
@@ -58,8 +58,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-4xl font-semibold text-white">Company</h3>
-            <ul className="mt-8 space-y-5 text-2xl text-slate-300">
+            <h3 className="text-2xl font-semibold text-white">Company</h3>
+            <ul className="mt-8 space-y-5 text-xl text-slate-300">
               <li><a href="#" className="hover:text-white">About Us</a></li>
               <li><a href="#" className="hover:text-white">Careers</a></li>
               <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-4xl font-semibold text-white">Newsletter</h3>
+            <h3 className="text-2xl font-semibold text-white">Newsletter</h3>
             <p className="mt-8 max-w-md text-2xl leading-relaxed text-slate-300">
               Subscribe to receive the latest offers and travel tips.
             </p>
@@ -93,7 +93,7 @@ const Footer = () => {
 
         <hr className="my-14 border-white/10" />
 
-        <p className="text-center text-2xl text-slate-400">
+        <p className="text-center text-xl text-slate-400">
           © {new Date().getFullYear()} DLIFE Car Rental. All rights reserved.
         </p>
       </div>
