@@ -28,14 +28,14 @@ const BestPrice = () => {
         <div className="grid grid-cols-1 gap-16 md:grid-cols-3 md:gap-12">
           {items.map((item) => (
             <article key={item.title} className="flex items-start gap-7">
-              <div className="grid h-24 w-24 shrink-0 place-items-center rounded-3xl bg-blue-100">
+              <div className="grid h-20 w-20 shrink-0 place-items-center rounded-3xl bg-blue-100">
                 {item.icon}
               </div>
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-slate-900">
+                <h3 className="text-xl font-semibold text-slate-900">
                   {item.title}
                 </h3>
-                <p className="max-w-xl text-xl leading-relaxed text-slate-600">
+                <p className="max-w-xl text-l leading-relaxed text-slate-600">
                   {item.description}
                 </p>
               </div>
