@@ -77,11 +77,11 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Email address"
-                  className="h-10 w-full bg-transparent px-4 text-2xl text-white placeholder:text-slate-400 outline-none"
+                  className="h-8 w-full bg-transparent px-4 text-xl text-white placeholder:text-slate-400 outline-none"
                 />
                 <button
                   type="submit"
-                  className="grid h-10 w-14 shrink-0 place-items-center rounded-xl bg-blue-600 text-white transition hover:bg-blue-500"
+                  className="grid h-8 w-14 shrink-0 place-items-center rounded-xl bg-blue-600 text-white transition hover:bg-blue-500"
                   aria-label="Submit newsletter email"
                 >
                   <FaChevronRight className="text-lg" />
