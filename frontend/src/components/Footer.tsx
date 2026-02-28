@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="bg-[#061943] text-slate-200"
+      className="relative overflow-x-hidden bg-[#061943] text-slate-200"
     >
       <div className="w-full px-6 pt-10 pb-4 sm:px-10 lg:px-14 lg:pt-12 lg:pb-5">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-4 lg:gap-10">
