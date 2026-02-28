@@ -11,7 +11,7 @@ const Footer = () => {
       id="contact"
       className="bg-[#061943] text-slate-200"
     >
-      <div className="w-full px-6 py-16 sm:px-10 lg:px-14 lg:py-20">
+      <div className="w-full px-6 pt-10 pb-4 sm:px-10 lg:px-14 lg:pt-12 lg:pb-5">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-4 lg:gap-10">
           <div>
             <a href="#" className="relative inline-flex h-16 w-[240px] items-start overflow-visible">
@@ -91,9 +91,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="my-14 border-white/10" />
+        <hr className="my-3 border-white/10" />
 
-        <p className="text-center text-xl text-slate-400">
+        <p className="text-center text-lg leading-tight text-slate-400">
           © {new Date().getFullYear()} DLIFE Car Rental. All rights reserved.
         </p>
       </div>
