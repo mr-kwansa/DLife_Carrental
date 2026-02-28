@@ -4,13 +4,14 @@ import Navbar from "./NavBar";
 
 type SiteLayoutProps = {
   children: ReactNode;
+  mainClassName?: string;
 };
 
-const SiteLayout = ({ children }: SiteLayoutProps) => {
+const SiteLayout = ({ children, mainClassName = "pt-40" }: SiteLayoutProps) => {
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-white">
       <Navbar />
-      <main className="pt-40">{children}</main>
+      <main className={mainClassName}>{children}</main>
       <Footer />
     </div>
   );

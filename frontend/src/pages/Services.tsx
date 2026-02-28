@@ -3,7 +3,7 @@ import ServicesHero from "../components/ServicesHero"
 
 const ServicesPage = () => {
   return (
-    <SiteLayout>
+    <SiteLayout mainClassName="pt-0">
      <ServicesHero/>
     </SiteLayout>
   );
