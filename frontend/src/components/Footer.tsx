@@ -30,26 +30,26 @@ const Footer = () => {
                 href="#"
                 className="grid h-14 w-14 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
               >
-                <FaFacebook className="text-xl" />
+                <FaFacebook className="text-l" />
               </a>
               <a
                 href="#"
                 className="grid h-14 w-14 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
               >
-                <FaAt className="text-xl" />
+                <FaAt className="text-l" />
               </a>
               <a
                 href="#"
                 className="grid h-14 w-14 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
               >
-                <FaCamera className="text-xl" />
+                <FaCamera className="text-l" />
               </a>
             </div>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-white">Quick Links</h3>
-            <ul className="mt-8 space-y-5 text-l text-slate-300">
+            <ul className="mt-8 space-y-5 text-slate-300">
               <li><a href="#" className="hover:text-white">Our Fleet</a></li>
               <li><a href="#" className="hover:text-white">Special Offers</a></li>
               <li><a href="#services" className="hover:text-white">Services</a></li>
@@ -59,7 +59,7 @@ const Footer = () => {
 
           <div>
             <h3 className="text-xl font-semibold text-white">Company</h3>
-            <ul className="mt-8 space-y-5 text-l text-slate-300">
+            <ul className="mt-8 space-y-5 text-slate-300">
               <li><a href="#" className="hover:text-white">About Us</a></li>
               <li><a href="#" className="hover:text-white">Careers</a></li>
               <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
@@ -93,7 +93,7 @@ const Footer = () => {
 
         <hr className="my-3 border-white/10" />
 
-        <p className="text-center text-lg leading-tight text-slate-400">
+        <p className="text-center leading-tight text-slate-400">
           © {new Date().getFullYear()} DLIFE Car Rental. All rights reserved.
         </p>
       </div>
