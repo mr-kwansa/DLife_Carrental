@@ -46,7 +46,7 @@ const RentPage = () => {
       <div className="-mt-20">
         <RentSearchBar />
       </div>
-      <section className="w-full bg-slate-100 py-10 pr-6 pl-0">
+      <section className="w-full bg-slate-100 px-4 py-10 sm:px-6 lg:pr-6 lg:pl-0">
         <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-[240px_1fr]">
           <aside className="rounded-xl border border-slate-200 bg-white p-5">
             <h2 className="text-sm font-bold tracking-wide text-slate-900 uppercase">
@@ -148,7 +148,7 @@ const RentPage = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-x-1 gap-y-2 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mx-auto grid w-full max-w-[460px] grid-cols-1 gap-x-1 gap-y-2 md:mx-0 md:max-w-none md:grid-cols-2 xl:grid-cols-4">
               {filteredCars.map((car) => (
                 <CarCard key={car.id} car={car} className="mx-0 max-w-none" />
               ))}
