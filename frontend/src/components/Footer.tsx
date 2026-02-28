@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-white">Quick Links</h3>
+            <h3 className="text-l font-semibold text-white">Quick Links</h3>
             <ul className="mt-8 space-y-5 text-slate-300">
               <li><a href="#" className="hover:text-white">Our Fleet</a></li>
               <li><a href="#" className="hover:text-white">Special Offers</a></li>
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-white">Company</h3>
+            <h3 className="text-l font-semibold text-white">Company</h3>
             <ul className="mt-8 space-y-5 text-slate-300">
               <li><a href="#" className="hover:text-white">About Us</a></li>
               <li><a href="#" className="hover:text-white">Careers</a></li>
@@ -68,8 +68,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-white">Newsletter</h3>
-            <p className="mt-8 max-w-md text-l leading-relaxed text-slate-300">
+            <h3 className="text-l font-semibold text-white">Newsletter</h3>
+            <p className="mt-8 max-w-md  leading-relaxed text-slate-300">
               Subscribe to receive the latest offers and travel tips.
             </p>
             <form className="mt-7">
