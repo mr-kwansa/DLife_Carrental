@@ -48,7 +48,7 @@ const RentPage = () => {
       </div>
       <section className="w-full bg-slate-100 px-4 py-10 sm:px-6 lg:pr-6 lg:pl-0">
         <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-[240px_1fr]">
-          <aside className="rounded-xl border border-slate-200 bg-white p-5">
+          <aside className="rounded-xl border border-slate-200 bg-white p-3">
             <h2 className="text-sm font-bold tracking-wide text-slate-900 uppercase">
               Vehicle Type/Types
             </h2>
