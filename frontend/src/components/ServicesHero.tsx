@@ -46,7 +46,7 @@ const ServicesHero = () => {
     <section className="w-full bg-linear-to-r from-slate-50 via-slate-100 to-slate-50 py-20 lg:py-24 ">
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-12">
         <div className="mx-auto max-w-5xl text-center">
-          <span className="inline-block rounded-full bg-blue-100 px-5 py-2 text-[0.4rem] font-bold tracking-[0.16em] text-blue-700 uppercase">
+          <span className="inline-block rounded-full bg-blue-100 px-5 py-2 text-[10px] font-bold tracking-[0.16em] text-blue-700 uppercase">
             Our Services
           </span>
           <h1 className="mt-6 text-2xl leading-tight font-black text-slate-900 sm:text-3xl lg:text-4xl">

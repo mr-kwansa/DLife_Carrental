@@ -72,7 +72,7 @@ const Reviews = ({ reviews = defaultReviews }: { reviews?: Review[] }) => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600 mb-3">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600 mb-3">
               Reviews
             </p>
             <h2 className="text-4xl lg:text-5xl font-extrabold">

@@ -7,13 +7,14 @@ import AdminDashboard from "./pages/AdminDashboard";
 import AdminFleet from "./pages/AdminFleet";
 import AdminCustomers from "./pages/AdminCustomers";
 import AdminShell from "./components/admin/AdminShell";
-
+import AboutPage from "./pages/AboutPage";
 function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/services" element={<ServicesPage />} />
       <Route path="/rent" element={<RentPage />} />
+      <Route path="/about" element={<AboutPage/>}/>
       {/* Public admin auth route. */}
       <Route path="/admin/login" element={<AdminLogin />} />
       {/* Admin panel now only includes Dashboard, Fleet, and Customers. */}
