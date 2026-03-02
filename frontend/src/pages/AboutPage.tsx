@@ -1,7 +1,6 @@
 import SiteLayout from "../components/SiteLayout";
 import { FaEye, FaRocket } from "react-icons/fa6";
 import WhyDlifeSection from "../components/WhyDlifeSection";
-import ContentSectionBase from "../components/ContentSectionBase";
 import Reviews from "../components/Reviews";
 
 const AboutPage = () => {
